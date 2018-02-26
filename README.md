@@ -1,4 +1,4 @@
-# Start Building a Dapp Fast
+# Build a Dapp in 20 Minutes
 
 In this tutorial we'll what each of these do:
 1. Web3 JS - enables client side app to talk to blockchain
