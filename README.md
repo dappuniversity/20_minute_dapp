@@ -1,8 +1,7 @@
-# Web3 Tutorial
+# Start Building a Dapp Fast
 
-In this tutorial we'll address the following questions:
-1. What is Web3?
-2. What is Metamask?
-3. What role do each of these play?
-4. How do I use them in a variety of environments?
-5. Why should I use a framework?
+In this tutorial we'll what each of these do:
+1. Web3 JS - enables client side app to talk to blockchain
+2. Metamask - enables browser to talk to blockchain
+3. Ganache - local development blockchain
+4. Remix - smart contract IDE
