@@ -71,10 +71,12 @@
         $('#candidateName').html(candidateName);
       });
 
-      // Change the Candidate Name
+     // Change the Candidate Name
       $('form').on('submit', function(event) {
         event.preventDefault();
-        contract.setCandidate($('input').val());
+        contract.setCandidate($('input').val(), function (err, result) {
+			$('#candidateName').html($('input').val());
+		});
       })
 
     </script>
