@@ -2,6 +2,6 @@
 
 Contributors:
 
-Onat Uzunyayla
-Mustafa Gokturk Yandim
-Alara Basak
+- Onat Uzunyayla
+- Mustafa Gokturk Yandim
+- Alara Basak
