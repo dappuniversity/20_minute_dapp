@@ -115,9 +115,10 @@ contract MultiSigWallet {
         transaction.to = to;
         transaction.amount = amount;
 
+        // Sign the transaction (+1) if the caller is an owner
         if (msg.sender == _owner || _owners[msg.sender] == 1){
             transaction.signatureCount = 1;
-        } else {
+        } else {    // Children can not sign a transaction themselves
             transaction.signatureCount = 0;
         }
 
@@ -164,6 +165,7 @@ contract MultiSigWallet {
             }
         }
 
+        assert(replace == 1);                                                   // Protection when replace = 0
         delete _pendingTransactions[_pendingTransactions.length - 1];           // Delete the last elements
         _pendingTransactions.length--;                                          // Update
         delete _transactions[transactionId];                                    // Deleting from a mapping
